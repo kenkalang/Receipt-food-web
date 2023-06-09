@@ -1,0 +1,31 @@
+header {
+    font-weight: 600;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  .navigation_items {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navigation_items a {
+    color: #757575;
+  }
+  
+  button {
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .account-items {
+    display: flex;
+    gap: 2vh;
+  }
