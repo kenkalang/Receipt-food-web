@@ -2,10 +2,8 @@ import './App.css';
 import React from 'react';
 import Navbar from './assets/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import 'bootstrap/dist/css/bootstrap.css';
 import { faPhone, faEnvelope, faStar } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import ModalFood from './assets/Modal';
 class App extends React.Component {
     state = {
         show: false as boolean,
@@ -625,10 +623,6 @@ class App extends React.Component {
                 <div className="copyright">
                     <p>© 2021 Elemes id. All rights reserved</p>
                 </div>
-                <ModalFood
-                    show={this.state.show}
-                    close={() => this.setState({ show: false })}
-                />
             </>
         );
     }
