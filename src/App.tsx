@@ -2,9 +2,15 @@ import './App.css';
 import React from 'react';
 import Navbar from './assets/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import 'bootstrap/dist/css/bootstrap.css';
+import { faPhone, faEnvelope, faStar } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import ModalFood from './assets/Modal';
 class App extends React.Component {
+    state = {
+        show: false as boolean,
+    };
+
     render() {
         return (
             <>
@@ -45,7 +51,24 @@ class App extends React.Component {
                                 <div className="desc_green_salad">
                                     <h1>Green Salad Tomato</h1>
                                     <p>Tomato</p>
-                                    <p>Star</p>
+                                    <div className="star-cover">
+                                        <FontAwesomeIcon
+                                            icon={faStar}
+                                            className="star-full"
+                                        />
+                                        <FontAwesomeIcon
+                                            icon={faStar}
+                                            className="star-full"
+                                        />
+                                        <FontAwesomeIcon
+                                            icon={faStar}
+                                            className="star-full"
+                                        />
+                                        <FontAwesomeIcon
+                                            icon={faStar}
+                                            className="star-full"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -164,7 +187,7 @@ class App extends React.Component {
                         </div>
                     </div>
                     <div className="footer_category">
-                        <button className="btn btn-primary">
+                        <button onClick={() => this.setState({ show: true })}>
                             Browse Category
                         </button>
                     </div>
@@ -193,7 +216,22 @@ class App extends React.Component {
                                 <div className="card_content_desc">
                                     <h1>Pizza Paperoni</h1>
                                     <p>Pizza</p>
-                                    <p>star</p>
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -215,7 +253,19 @@ class App extends React.Component {
                                 <div className="card_content_desc">
                                     <h1>Pizza Paperoni</h1>
                                     <p>Pizza</p>
-                                    <p>star</p>
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon icon={faStar} />
                                 </div>
                             </div>
                         </div>
@@ -237,7 +287,19 @@ class App extends React.Component {
                                 <div className="card_content_desc">
                                     <h1>Pizza Paperoni</h1>
                                     <p>Pizza</p>
-                                    <p>star</p>
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon icon={faStar} />
                                 </div>
                             </div>
                         </div>
@@ -259,7 +321,19 @@ class App extends React.Component {
                                 <div className="card_content_desc">
                                     <h1>Pizza Paperoni</h1>
                                     <p>Pizza</p>
-                                    <p>star</p>
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon icon={faStar} />
                                 </div>
                             </div>
                         </div>
@@ -281,7 +355,19 @@ class App extends React.Component {
                                 <div className="card_content_desc">
                                     <h1>Pizza Paperoni</h1>
                                     <p>Pizza</p>
-                                    <p>star</p>
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon icon={faStar} />
                                 </div>
                             </div>
                         </div>
@@ -303,7 +389,19 @@ class App extends React.Component {
                                 <div className="card_content_desc">
                                     <h1>Pizza Paperoni</h1>
                                     <p>Pizza</p>
-                                    <p>star</p>
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon icon={faStar} />
                                 </div>
                             </div>
                         </div>
@@ -325,7 +423,19 @@ class App extends React.Component {
                                 <div className="card_content_desc">
                                     <h1>Pizza Paperoni</h1>
                                     <p>Pizza</p>
-                                    <p>star</p>
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon icon={faStar} />
                                 </div>
                             </div>
                         </div>
@@ -347,7 +457,19 @@ class App extends React.Component {
                                 <div className="card_content_desc">
                                     <h1>Pizza Paperoni</h1>
                                     <p>Pizza</p>
-                                    <p>star</p>
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon icon={faStar} />
                                 </div>
                             </div>
                         </div>
@@ -369,7 +491,19 @@ class App extends React.Component {
                                 <div className="card_content_desc">
                                     <h1>Pizza Paperoni</h1>
                                     <p>Pizza</p>
-                                    <p>star</p>
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon icon={faStar} />
                                 </div>
                             </div>
                         </div>
@@ -391,13 +525,25 @@ class App extends React.Component {
                                 <div className="card_content_desc">
                                     <h1>Pizza Paperoni</h1>
                                     <p>Pizza</p>
-                                    <p>star</p>
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon
+                                        className="star-full"
+                                        icon={faStar}
+                                    />
+                                    <FontAwesomeIcon icon={faStar} />
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="footer_category">
-                        <button className="btn btn-primary">
+                        <button onClick={() => this.setState({ show: true })}>
                             Browse Receipt
                         </button>
                     </div>
@@ -479,6 +625,10 @@ class App extends React.Component {
                 <div className="copyright">
                     <p>© 2021 Elemes id. All rights reserved</p>
                 </div>
+                <ModalFood
+                    show={this.state.show}
+                    close={() => this.setState({ show: false })}
+                />
             </>
         );
     }
